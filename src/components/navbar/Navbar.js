@@ -9,7 +9,7 @@ const Navbar = () => {
             </Link>
             <ul>
                 <li><Link to="about">About</Link></li>
-                <li><a href="https://github.com/zgulen" target="_blank">Github</a></li>
+                <li><a href="https://github.com/zgulen" target="_blank" rel='noreferrer'>Github</a></li>
                 <li><Link to="logout">Logout</Link></li>
             </ul>
         </div>

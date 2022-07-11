@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import RecipeCard from './RecipeCard'
+import Navbar from '../../components/navbar/Navbar'
 
 const Home = () => {
     const [query, setQuerry] = useState()
@@ -12,6 +13,7 @@ const Home = () => {
     }
     return (
         <div>
+            <Navbar/>
             <form onSubmit={handleGetFood}>
                 <input type="text" placeholder='SEARCH' name='search' onChange={(e) => setQuerry(e.target.value)} />
                 <button>
