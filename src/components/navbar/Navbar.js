@@ -1,18 +1,19 @@
 import React from 'react'
 import logo from "../../assets/home.svg"
 import { Link } from "react-router-dom"
+import Ul, { LI, Nav } from './style'
 const Navbar = () => {
     return (
-        <div>
-            <Link to="home">
+        <Nav>
+            <Link to="/home">
                 <img src={logo} alt="" style={{height:"100px"}}/>
             </Link>
-            <ul>
-                <li><Link to="about">About</Link></li>
-                <li><a href="https://github.com/zgulen" target="_blank" rel='noreferrer'>Github</a></li>
-                <li><Link to="logout">Logout</Link></li>
-            </ul>
-        </div>
+            <Ul>
+                <LI><Link to="about">About</Link></LI>
+                <LI><a href="https://github.com/zgulen" target="_blank" rel='noreferrer'>Github</a></LI>
+                <LI><Link to="logout">Logout</Link></LI>
+            </Ul>
+        </Nav>
     )
 }
 

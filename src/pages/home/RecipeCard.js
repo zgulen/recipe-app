@@ -1,7 +1,9 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { CardDiv, Button } from './style'
+import Div from './style'
 
-const RecipeCard = ({ query, meal,isSearched }) => {
+const RecipeCard = ({ query, meal, isSearched }) => {
     const [data, setData] = useState([])
     // const APP_ID = "68c44782"
     // const APP_KEY = "61bf5b664dae3e4c8b60dd72eb2119e8"
@@ -17,19 +19,19 @@ const RecipeCard = ({ query, meal,isSearched }) => {
     // console.log(query);
     // console.log(meal);
     return (
-        <div>
+        <Div>
             {
                 data.map((item, index) => {
                     console.log(item.recipe.url);
                     return (
-                        <div key={index}>
-                            <h1>{item.recipe.url}</h1>
+                        <CardDiv key={index} >
                             <img src={item.recipe.image} alt="" />
-                        </div>
+                            <Button>View More</Button>
+                        </CardDiv>
                     )
                 })
             }
-        </div>
+        </Div>
     )
 }
 
