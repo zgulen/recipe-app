@@ -24,11 +24,10 @@ const RecipeCard = ({ query, meal, isSearched }) => {
         <Div>
             {
                 data.map((item, index) => {
-
                     return (
                         <CardDiv key={index} >
                             <img src={item.recipe.image} alt="" />
-                            <Button onClick={()=>(navigate(`/home/${item.recipe.label}/${meal}`))}>View More</Button>
+                            <Button onClick={()=>(navigate(`/home/${item.recipe.label}/${meal}/${item.recipe.calories}`))}>View More</Button>
                         </CardDiv>
                     )
                 })

@@ -14,7 +14,7 @@ const AppRouter = () => {
                     {/* <Route path='/home' element={<Navbar/>} /> */}
                     <Route path="/" element={<Form/>} />
                     <Route path="/home" element={<Home />} />
-                    <Route path="/home/:label/:meal" element={<CardInfo />} />
+                    <Route path="/home/:label/:meal/:calories" element={<CardInfo />} />
                 </Routes>
             </BrowserRouter>
         </div>
