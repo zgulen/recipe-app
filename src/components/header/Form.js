@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Navigate } from "react-router-dom"
+import StyledForm, {Div, Input,Button} from './style'
 
 
 const Form = () => {
@@ -23,20 +24,23 @@ const Form = () => {
     }, 3000);
 
     return (
-        <div>
+        <Div>
             {isLogged === false ?
-                <form onSubmit={handleLogin}>
+                <StyledForm onSubmit={handleLogin}>
+                    <div style={{marginTop:"2rem"}}>
                     <label htmlFor="id">Username</label>
-                    <input type="text" name='id' placeholder="Username" required />
-                    <label htmlFor="password">Password</label>
-                    <input type="password" name='password' placeholder="Password" required />
-                    <button>Login</button>
-                    
+                    <Input type="text" name='id' placeholder="Username" required />
+                    </div>
+                    <div>
+                    <label htmlFor="password">Password </label>
+                    <Input type="password" name='password' placeholder="Password" required />
+                    </div>
+                    <Button>Login</Button>
                     <p>{alert}</p>
-                </form> :
+                </StyledForm> :
                 <Navigate to="/home" />
             }
-        </div>
+        </Div>
     )
 }
 

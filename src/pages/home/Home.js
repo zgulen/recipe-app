@@ -15,11 +15,11 @@ const Home = () => {
         <div>
             <Navbar/>
             <form onSubmit={handleGetFood}>
-                <input type="text" placeholder='SEARCH' name='search' onChange={(e) => setQuerry(e.target.value)} />
-                <button>
+                <input style={{marginTop:"2rem",  padding:".5rem"}} type="text" placeholder='SEARCH' name='search' onChange={(e) => setQuerry(e.target.value)} />
+                <button style={{marginTop:"2rem", padding:".5rem", marginLeft:"1rem"}}>
                 {isSearched && "New"} Search
                 </button>
-                <select onChange={(e) => setMeal(e.target.value)}>
+                <select onChange={(e) => setMeal(e.target.value)} style={{marginTop:"2rem",marginLeft:"1rem", padding:".5rem"}}>
                     <option selected disabled>Select Meal</option>
                     <option value="breakfast">Breakfast</option>
                     <option value="lunch">Lunch</option>
