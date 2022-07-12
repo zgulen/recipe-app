@@ -11,7 +11,7 @@ const Navbar = () => {
             <Ul>
                 <LI><Link to="about">About</Link></LI>
                 <LI><a href="https://github.com/zgulen" target="_blank" rel='noreferrer'>Github</a></LI>
-                <LI><Link to="logout">Logout</Link></LI>
+                <LI><Link to="/">Logout</Link></LI>
             </Ul>
         </Nav>
     )

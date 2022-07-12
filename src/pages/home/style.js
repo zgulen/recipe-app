@@ -40,6 +40,8 @@ export const StyledCard = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 3rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
 `
 export const UL = styled.ul`
   list-style-type: none;
