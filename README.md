@@ -1,10 +1,10 @@
 # Recipe APP
 
-This Project created for learning React Route framework, axios and hooks. Clarusway made me to do this.
+This Project created for learning React Route framework, axios and hooks.
 
 
 ## Technologies
 
-**İstemci:** React, styledComponent, axios, React router
+** React, styledComponent, axios, React router
 
 ![Alt Text](./recipe-app.gif)
